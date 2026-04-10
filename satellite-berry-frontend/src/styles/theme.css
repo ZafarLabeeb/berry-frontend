@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+
+  --color-background: #08100d;
+  --color-foreground: #edf3ec;
+  --color-muted: #112019;
+  --color-muted-foreground: #a8b7ab;
+  --color-border: rgba(202, 225, 207, 0.12);
+  --color-surface: rgba(11, 20, 16, 0.82);
+  --color-surface-elevated: rgba(15, 29, 22, 0.88);
+  --color-surface-strong: rgba(6, 12, 10, 0.9);
+
+  --color-forest-50: #eef8f0;
+  --color-forest-100: #d9eadf;
+  --color-forest-200: #b9d0bf;
+  --color-forest-300: #92b096;
+  --color-forest-400: #5f8c69;
+  --color-forest-500: #406f4b;
+  --color-forest-600: #31553a;
+  --color-forest-700: #264330;
+  --color-forest-800: #183022;
+  --color-forest-900: #0f1f18;
+
+  --color-berry-50: #fff1f5;
+  --color-berry-100: #ffd7e4;
+  --color-berry-200: #f7adc7;
+  --color-berry-300: #e47aa0;
+  --color-berry-400: #ca517a;
+  --color-berry-500: #a82d58;
+  --color-berry-600: #7e1c3e;
+  --color-berry-700: #641630;
+  --color-berry-800: #431020;
+  --color-berry-900: #230b12;
+
+  --color-gold-100: #f8edd0;
+  --color-gold-300: #dec98c;
+  --color-gold-500: #c0a75c;
+
+  --color-success: #7acc8f;
+  --color-danger: #ff8ca8;
+  --color-info: #7ab6cc;
+}

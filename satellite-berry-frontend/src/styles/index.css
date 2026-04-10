@@ -1,0 +1,62 @@
+@import './theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(95, 140, 105, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(168, 45, 88, 0.12), transparent 28%),
+    linear-gradient(180deg, #08100d 0%, #0a1310 48%, #07100d 100%);
+  color: var(--color-foreground);
+  font-family: Inter, 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  font-feature-settings: 'cv11' 1, 'ss01' 1;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black, transparent 88%);
+  opacity: 0.25;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(222, 201, 140, 0.3);
+  color: white;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  img {
+    @apply select-none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
